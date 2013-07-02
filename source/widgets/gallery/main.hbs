@@ -1,0 +1,14 @@
+{{#if repositories.length }}
+  <ul class="grid">
+    {{#each repositories}}
+      <li class="grid-item">
+        <h3 class="grid-item-title"><a href="#/{{uid}}">{{uid}}</a></h3>
+        <div data-hull-widget="ratings" data-hull-id="{{encoded_uid}}"></div>
+      </li>
+    {{/each}}
+  </ul>
+{{else}}
+  <div class="island-empty-state">
+    <p>No item</p>
+  </div>
+{{/if}}

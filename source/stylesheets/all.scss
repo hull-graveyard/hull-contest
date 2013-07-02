@@ -1,0 +1,25 @@
+body {
+  background: #f1f3f5;
+}
+
+.island {
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-bottom: 1.25em;
+  border: 1px solid #D4D4D4;
+  border-radius: 4px;
+  background: #FFF;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.island-title {
+  margin: 0;
+  padding: 10px;
+  border-bottom: 1px solid #D4D4D4;
+  border-radius: 4px 4px 0 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.015), rgba(0, 0, 0, 0.075));
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+}

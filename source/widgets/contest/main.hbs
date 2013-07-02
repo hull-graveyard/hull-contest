@@ -1,0 +1,14 @@
+{{#if notice}}
+  <p>{{notice}}</p>
+{{/if}}
+
+<a href="#/">Home</a>
+
+{{#if loggedIn}}
+  <p>Register for the Hull contest <a href="#/register">Register</a></p>
+{{else}}
+  <p>Loggin to register</p>
+  <div data-hull-widget="login_button@hull"></div>
+{{/if}}
+
+<div data-hull-widget="root"></div>

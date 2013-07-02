@@ -1,0 +1,18 @@
+<div class="repository">
+  {{#if repository}}
+    {{#with repository}}
+      <h2>{{name}}</h2>
+      {{#if description}}
+        <p>{{description}}</p>
+      {{/if}}
+    {{/with}}
+    <div class="comments">
+      <div data-hull-widget="ratings" data-hull-uid="{{name}}"></div>
+      <div data-hull-widget="comments@hull" data-hull-uid="{{name}}"></div>
+    </div>
+  {{else}}
+    <div class="repositories-empty-state">
+      <p>The repository "{{name}}" does not exist.</p>
+    </div>
+  {{/if}}
+</div>

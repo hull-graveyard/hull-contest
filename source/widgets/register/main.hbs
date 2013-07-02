@@ -1,0 +1,10 @@
+<h2>Register for the Hull contest</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dictum urna et augue scelerisque, sed pharetra nibh cursus. Quisque cursus, nunc eu eleifend porttitor, tortor enim fringilla quam, vel ornare mi elit vestibulum libero.</p>
+
+{{#if loggedIn}}
+  <h3>Select a repository</h3>
+  <div data-hull-widget="repositories"></div>
+{{else}}
+  <h3>Please log in to select a repository</h3>
+  <div data-hull-widget="login_button@hull"></div>
+{{/if}}

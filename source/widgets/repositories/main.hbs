@@ -1,0 +1,18 @@
+<div class="repositories">
+  {{#if repositories.length}}
+    <ul class="repositories-list">
+      {{#each repositories}}
+        <li class="repository" data-index={{@index}}>
+          <h3 class="repository-name">{{name}}</h3>
+          {{#if description}}
+            <p class="repository-description">{{description}}</p>
+          {{/if}}
+        </li>
+      {{/each}}
+    </ul>
+  {{else}}
+    <div class="repositories-empty-state">
+      <p>You do not have repositories.</p>
+    </div>
+  {{/if}}
+</div>
